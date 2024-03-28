@@ -27,6 +27,9 @@ add_test(concat_string concat_string)
 add_executable(list_sort src/0003.list_sort/list_sort.cc)
 add_test(list_sort list_sort)
 
+add_executable(generate_graph src/0004.dijkstra/generate_graph.cc)
+add_test(generate_graph generate_graph)
+
 add_executable(dijkstra_optimize_fastio src/0004.dijkstra/dijkstra_optimize_fastio.cc)
 add_test(dijkstra_optimize_fastio dijkstra_optimize_fastio)
 
