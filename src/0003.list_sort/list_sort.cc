@@ -9,7 +9,6 @@ using namespace fast_io::mnp;
 
 int main()
 {
-	::fast_io::timer timer(u8"list_sort");
 	::fast_io::vector<::std::size_t> vec;
 	constexpr ::std::size_t n{1000000};
 	vec.reserve(n);
@@ -19,12 +18,16 @@ int main()
 	}
 	::fast_io::ibuf_white_hole_engine eng;
 	::std::ranges::shuffle(vec, eng);
-
-	::fast_io::list<::std::size_t> lst(::fast_io::freestanding::from_range, vec);
-
-	lst.sort();
-	for (auto const &e : lst)
+	::std::size_t sum{};
 	{
-		println(e);
+		::fast_io::timer timer(u8"list_sort");
+		::fast_io::list<::std::size_t> lst(::fast_io::freestanding::from_range, vec);
+		lst.sort();
+		
+		for(auto const & e : lst)
+		{
+			sum += e;
+		}
 	}
+	println(sum);
 }
