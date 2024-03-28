@@ -36,7 +36,7 @@ inline auto color_concat (std::uint_least8_t r, std::uint_least8_t g, std::uint_
 
 int main()
 {
-	auto concat_std_time = benchmark(color_concat_std);
+	auto concat_std_time = benchmark(color_concat);
 	using namespace fast_io::io;
 	print("fast_io::concat (total size: ",
 		concat_time.total_size, ") took ", concat_time.timestamp,
