@@ -24,7 +24,7 @@ using namespace fast_io::io;
 int main()
 {
 	::fast_io::timer timer(u8"dijkstra_optimize_fastio");
-	fast_io::ibuf_file ibf("graph.txt");
+	fast_io::ibuf_file ibf("graph.test");
 	std::size_t m, n;
 	scan(ibf, m, n);
 	::fast_io::vector<::fast_io::vector<node>> graph(n);
@@ -56,7 +56,7 @@ int main()
 			}
 		}
 	}
-	fast_io::obuf_file obf("dijkstra.txt");
+	fast_io::obuf_file obf("dijkstra.test");
 	if (relax.back() == SIZE_MAX)
 	{
 		print(obf, "no answer\n");

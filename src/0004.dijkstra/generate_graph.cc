@@ -8,7 +8,7 @@ using namespace fast_io::io;
 int main()
 {
 	::fast_io::timer timer(u8"generate_graph");
-	fast_io::u8obuf_file obf(u8"graph.txt");
+	fast_io::u8obuf_file obf(u8"graph.test");
 	constexpr std::size_t m{1000000};
 	constexpr std::size_t n{100000};
 	println(obf, m, u8" ", n);
