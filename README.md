@@ -1,9 +1,9 @@
-# fast_io-standard-microbenchmark
+# fastiobench
 
 This set of microbenchmarks adheres to the C++ standard and is designed to execute common benchmarks within the fast_io library. We believe these benchmarks represent typical scenarios and offer a relatively precise measure of performance of your environment.
 
 
-# fast_io-standard-microbenchmark
+# fastiobench
 This benchmark includes 10 standard benchmarks:
 
 print/scan 10 million integers
