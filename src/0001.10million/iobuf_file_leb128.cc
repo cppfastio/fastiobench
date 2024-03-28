@@ -21,7 +21,7 @@ int main()
 		fast_io::u8ibuf_file ibf(u8"iobuf_file_leb128.test");
 		for (auto & e : vec)
 		{
-			scan(ibf, fast_io::mnp::leb128_get(vec));
+			scan(ibf, fast_io::mnp::leb128_get(e));
 		}
 	}
 }
