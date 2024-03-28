@@ -18,6 +18,6 @@ int main()
 		}
 		capacity = vec.capacity();
 	}
-	println("vec capacity:",capacity);
+	::fast_io::io::println("vec capacity:",capacity);
 }
 
