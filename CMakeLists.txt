@@ -36,5 +36,9 @@ add_test(dijkstra_optimize_fastio dijkstra_optimize_fastio)
 add_executable(dijkstra_optimize_fastio_unchecked src/0004.dijkstra/dijkstra_optimize_fastio_unchecked.cc)
 add_test(dijkstra_optimize_fastio_unchecked dijkstra_optimize_fastio_unchecked)
 
+add_executable(sha512 src/0005.sha/sha512.cc)
+add_test(sha512 sha512)
+
 add_executable(vector_push_back src/0006.vector_push_back/vector_push_back.cc)
 add_test(vector_push_back vector_push_back)
+
