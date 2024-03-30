@@ -42,3 +42,5 @@ add_test(sha512 sha512)
 add_executable(vector_push_back src/0006.vector_push_back/vector_push_back.cc)
 add_test(vector_push_back vector_push_back)
 
+add_executable(ibuf_white_hole_engine src/0007.random/ibuf_white_hole_engine.cc)
+add_test(ibuf_white_hole_engine ibuf_white_hole_engine)
