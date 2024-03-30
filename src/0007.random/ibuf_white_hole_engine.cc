@@ -7,7 +7,7 @@ using namespace fast_io::io;
 int main()
 {
 	fast_io::timer tm(u8"ibuf_white_hole_engine");
-	fast_io::u8obuf_file obf(u"ibuf_white_hole_engine.txt");
+	fast_io::u8obuf_file obf(u"ibuf_white_hole_engine.test");
 	fast_io::ibuf_white_hole_engine eng;
 	std::uniform_int_distribution<std::size_t> ud(0, 61);
 	std::uniform_int_distribution<std::size_t> rlen(8, 20);
