@@ -57,3 +57,28 @@ vector.push_back is a frequently used operation in C++ due to the widespread ado
 ## 10.randpass
 
 This generates 1 million passwords using the system's cryptographically secure random number generator. It assesses the performance of the random number generator, a task commonly encountered in various applications.
+
+# How to run this benchmark?
+
+
+To start, clone the 'next' branch of fast_io:
+
+```
+git clone -b next https://github.com/cppfastio/fast_io
+```
+
+Then execute the following commands:
+
+```
+cd fast_io
+mkdir build
+cd build
+cmake -GNinja .. -DCMAKE_BUILD_TYPE=Release
+ninja
+ctest --verbose
+```
+
+This sequence of commands clones the 'next' branch of the fast_io repository, creates a build directory, configures the build with CMake, compiles the project using Ninja, and runs the tests with verbose output.
+
+## Emulate the Benchmark
+To run the benchmark in an emulator, such as QEMU, Wine, or WebAssembly virtual machines, you can create a Bash script file and include your command within it using the following option: -DCMAKE_CROSSCOMPILING_EMULATOR=yourscriptfile.
