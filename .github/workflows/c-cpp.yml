@@ -1,0 +1,41 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  ubuntu:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Clone fast_io
+      run: git clone -b next https://github.com/trcrsired/fast_io
+    - name: Install ninja-build tool
+      uses: seanmiddleditch/gha-setup-ninja@v4
+    - name: cmake
+      run: cmake -GNinja . -DCMAKE_BUILD_TYPE=Release -DFAST_IO_DIR=fast_io
+    - name: ninja
+      run: ninja
+    - name: ctest running bench
+      run: ctest --verbose
+
+  windows:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ilammy/msvc-dev-cmd@v1.4.1
+    - name: Clone fast_io
+      run: git clone -b next https://github.com/trcrsired/fast_io
+    - name: cmake
+      run: cmake -GNinja . -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=cl -DCMAKE_CXX_COMPILER=cl -DFAST_IO_DIR=fast_io
+    - name: ninja
+      run: ninja
+    - name: ctest running bench
+      run: ctest --verbose
