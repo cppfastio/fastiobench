@@ -26,7 +26,7 @@ This benchmark includes 10 standard benchmarks:
 
 10.randpass
 
-# Tests Explainations
+# Benches Explainations
 
 ## 1.10mint
 This benchmark generates 10 million integers and writes them to a file, then reads them back. It is designed to evaluate the performance of formatted input/output operations, crucial for tasks such as logging, serializing text (e.g., JSON), or handling vast amounts of text input/output in ACM/ICPC or Computing Olympiad competitions.
