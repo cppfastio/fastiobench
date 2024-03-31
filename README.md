@@ -3,18 +3,27 @@
 This set of microbenchmarks adheres to the C++ standard and is designed to execute common benchmarks within the fast_io library. We believe these benchmarks represent typical scenarios and offer a relatively precise measure of performance of your environment.
 
 
-# fastiobench
+# Description
 This benchmark includes 10 standard benchmarks:
 
 1.10mint: print/scan 10 million integers
+
 2.leb128: print/scan 10 million integers with leb128
+
 3.concatstr: concat std::string
+
 4.gengraph: generate a graph for dijkstra and dijkstra unchecked
+
 5.dijkstra
+
 6.dijkstra_unchecked
+
 7.list sort
+
 8.sha512
+
 9.vec_push_back:vector push_back
+
 10.randpass
 
 # Tests Explainations
