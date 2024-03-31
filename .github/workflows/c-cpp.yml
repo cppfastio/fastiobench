@@ -40,18 +40,5 @@ jobs:
     - name: ctest running bench
       run: ctest --verbose
 
-  #macos:
 
-  #  runs-on: macos-latest
-
-  #  steps:
-  #  - uses: actions/checkout@v3
-  #  - name: Install ninja-build tool
-  #    uses: seanmiddleditch/gha-setup-ninja@v4
-  #  - name: cmake
-  #    run: cmake -GNinja . -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTS=On -DCMAKE_CXX_FLAGS="-fsanitize=address,undefined -Wall -Wextra -Wpedantic -Wmisleading-indentation -Wunused -Wuninitialized -Wshadow -Wconversion -Werror"
-  #  - name: ninja
-  #    run: ninja
-  #  - name: ninja test
-  #    run: ninja test
 
