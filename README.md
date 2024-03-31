@@ -90,4 +90,4 @@ ctest --verbose
 This sequence of commands clones the 'next' branch of the fast_io repository, creates a build directory, configures the build with CMake, compiles the project using Ninja, and runs the tests with verbose output.
 
 ## Emulate the Benchmark
-To run the benchmark in an emulator, such as QEMU, Wine, or WebAssembly virtual machines, you can create a Bash script file and include your command within it using the following option: -DCMAKE_CROSSCOMPILING_EMULATOR=yourscriptfile.
+To run the benchmark in an emulator, such as QEMU, Wine, or WebAssembly virtual machines, you can create a Bash script file and include your command within it using the following option: ```-DCMAKE_CROSSCOMPILING_EMULATOR=yourscriptfile```.
