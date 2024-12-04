@@ -4,7 +4,7 @@
 
 int main()
 {
-	constexpr ::std::size_t N{20000000};
+	constexpr ::std::size_t N{5000000};
 	::std::size_t capacity{};
 	{
 		::fast_io::timer timer_total(u8"::fast_io::vector<::std::size_t>");
